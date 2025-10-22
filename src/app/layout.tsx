@@ -33,6 +33,7 @@ export default function RootLayout({
         <style dangerouslySetInnerHTML={{
           __html: `
             /* CACHE BUST - FORCE RELOAD - ${Date.now()} */
+            /* NUCLEAR WHITE BACKGROUND - DEPLOY NOW - ${Date.now()} */
             html, body, #__next, main {
               background: #ffffff !important;
               background-color: #ffffff !important;
