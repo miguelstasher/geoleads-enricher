@@ -10,3 +10,7 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+// FORCE VERCEL DEPLOYMENT - 2025-10-22 15:36:56
+// This change should trigger a new build
+export const forceDeploy = true;
