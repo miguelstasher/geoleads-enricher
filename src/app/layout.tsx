@@ -44,6 +44,18 @@ export default function RootLayout({
               background-color: #ffffff !important;
             }
             
+            /* NUCLEAR OPTION - FORCE WHITE ON EVERYTHING */
+            *, *::before, *::after {
+              background: #ffffff !important;
+              background-color: #ffffff !important;
+            }
+            
+            /* Override any dark themes completely */
+            .dark, [data-theme="dark"], .bg-gray-900, .bg-gray-800, .bg-black, .bg-slate-900, .bg-slate-800 {
+              background: #ffffff !important;
+              background-color: #ffffff !important;
+            }
+            
             /* Force white background on ALL page containers */
             .space-y-6, .min-h-screen, .bg-gray-50, .bg-gray-100 {
               background: #ffffff !important;
@@ -120,6 +132,22 @@ export default function RootLayout({
             /* Fix dashboard titles */
             h1, h2, h3, h4, h5, h6 {
               color: #111827 !important;
+            }
+            
+            /* NUCLEAR DASHBOARD FIX - ELIMINATE ALL BLACK */
+            .space-y-6, .min-h-screen, main, body, html {
+              background: #ffffff !important;
+              background-color: #ffffff !important;
+            }
+            
+            /* Force white on all dashboard containers */
+            .bg-white, .bg-gray-50, .bg-gray-100, .bg-slate-50, .bg-slate-100 {
+              background: #ffffff !important;
+            }
+            
+            /* Override any remaining dark backgrounds */
+            .bg-gray-900, .bg-gray-800, .bg-black, .bg-slate-900, .bg-slate-800, .bg-zinc-900, .bg-zinc-800 {
+              background: #ffffff !important;
             }
             
            /* Fix placeholder text visibility */
