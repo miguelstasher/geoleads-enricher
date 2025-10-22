@@ -38,10 +38,20 @@ export default function RootLayout({
               background-color: #ffffff !important;
             }
             
-            /* Force white background on ALL elements */
-            body, html, #__next, main, div {
+            /* ULTRA-AGGRESSIVE WHITE BACKGROUND - FORCE EVERYWHERE */
+            body, html, #__next, main, div, section, article, aside, header, footer {
               background: #ffffff !important;
               background-color: #ffffff !important;
+            }
+            
+            /* Force white background on ALL page containers */
+            .space-y-6, .min-h-screen, .bg-gray-50, .bg-gray-100 {
+              background: #ffffff !important;
+            }
+            
+            /* Override any dark theme classes */
+            .dark, [data-theme="dark"], .bg-gray-900, .bg-gray-800, .bg-black {
+              background: #ffffff !important;
             }
             
             /* Override any dark backgrounds */
@@ -89,6 +99,27 @@ export default function RootLayout({
             /* Fix extract page title */
             h1.text-2xl.font-bold {
               color: #171717 !important;
+            }
+            
+            /* ULTRA-AGGRESSIVE DASHBOARD FIXES */
+            /* Force white background on dashboard */
+            .space-y-6, .min-h-screen {
+              background: #ffffff !important;
+            }
+            
+            /* Fix dashboard card text - make it black on white */
+            .bg-white, .bg-white * {
+              color: #111827 !important;
+            }
+            
+            /* Fix dashboard statistics text */
+            .text-3xl, .text-2xl, .text-xl, .text-lg {
+              color: #111827 !important;
+            }
+            
+            /* Fix dashboard titles */
+            h1, h2, h3, h4, h5, h6 {
+              color: #111827 !important;
             }
             
            /* Fix placeholder text visibility */
