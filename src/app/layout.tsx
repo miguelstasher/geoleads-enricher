@@ -141,6 +141,18 @@ export default function RootLayout({
               background-color: #ffffff !important;
             }
             
+            /* FORCE WHITE BACKGROUND ON ALL PAGE CONTAINERS */
+            .min-h-screen, .space-y-6, .space-y-8 {
+              background: #ffffff !important;
+              background-color: #ffffff !important;
+            }
+            
+            /* OVERRIDE GRAY BACKGROUNDS */
+            .bg-gray-50, .bg-gray-100, .bg-slate-50, .bg-slate-100 {
+              background: #ffffff !important;
+              background-color: #ffffff !important;
+            }
+            
             /* Force white on all dashboard containers */
             .bg-white, .bg-gray-50, .bg-gray-100, .bg-slate-50, .bg-slate-100 {
               background: #ffffff !important;

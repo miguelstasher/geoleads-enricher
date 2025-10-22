@@ -163,7 +163,7 @@ export default function Home() {
   const router = useRouter();
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6 space-y-8 w-full">
+    <div className="min-h-screen bg-white p-6 space-y-8 w-full">
       {/* Loading state */}
       {loading && (
         <div className="flex justify-center items-center h-64">
